@@ -8,5 +8,4 @@ export default styled.div`
   justify-content: center;
   padding: 1.25rem;
   box-sizing: border-box;
-  background-color: #c3c3c3;
 `;

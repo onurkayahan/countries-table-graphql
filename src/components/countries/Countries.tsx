@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import { CircularProgress, Typography, Card, CardContent } from "@mui/material";
+import {
+  CircularProgress,
+  Typography,
+  Card,
+  CardContent,
+  CardHeader,
+} from "@mui/material";
 import countriesStore from "../../stores/countriesStore";
 import { observer } from "mobx-react-lite";
 import Wrapper from "./styles";
@@ -35,7 +41,11 @@ const Countries = observer(() => {
 
   return (
     <Wrapper>
-      <Card sx={{ minWidth: "500px" }}>
+      <Card sx={{ minWidth: "75vw", borderRadius: "0.75rem", padding: "2rem" }}>
+        <CardHeader
+          title="Countries Table"
+          titleTypographyProps={{ variant: "h5" }}
+        />
         <CardContent>
           <CountriesTableSearch
             searchTerm={searchTerm}

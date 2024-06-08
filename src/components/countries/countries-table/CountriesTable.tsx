@@ -20,7 +20,7 @@ interface Column {
 
 const columns: readonly Column[] = [
   { id: "code", label: "Code", minWidth: 100 },
-  { id: "name", label: "Name", minWidth: 170 },
+  { id: "name", label: "Name", minWidth: 300 },
 ];
 
 interface Props {
