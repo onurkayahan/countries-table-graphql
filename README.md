@@ -4,11 +4,14 @@ Countries table with search with country code, countries consumed from open grap
 
 Tech stack: GraphQL, MobX, Typescript, React, @Mui/material, Vitest
 
-### GraphQL url: https://countries.trevorblades.com/
+#### Demo Link: 
+https://yolo-technical-task.vercel.app/
 
-### Query name: countries
+#### GraphQL URL: 
+https://countries.trevorblades.com/
 
-### Demo link: https://yolo-technical-task.vercel.app/
+#### Query Name: 
+countries
 
 ## Project setup
 
