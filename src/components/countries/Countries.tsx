@@ -9,7 +9,7 @@ import {
 import countriesStore from "../../stores/countriesStore";
 import { observer } from "mobx-react-lite";
 import Wrapper from "./styles";
-import CountriesTableSearch from "./search/CountriesTableSearch";
+import CountriesSearch from "./search/CountriesSearch";
 import CountriesTable from "./countries-table/CountriesTable";
 
 const Countries = observer(() => {
@@ -47,7 +47,7 @@ const Countries = observer(() => {
           titleTypographyProps={{ variant: "h5" }}
         />
         <CardContent>
-          <CountriesTableSearch
+          <CountriesSearch
             searchTerm={searchTerm}
             handleSearch={handleSearch}
           />
