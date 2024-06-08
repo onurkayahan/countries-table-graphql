@@ -24,7 +24,7 @@ const columns: readonly Column[] = [
 ];
 
 interface Props {
-  countries: Country[];
+  countries: Pick<Country, "name" | "code">[];
 }
 
 export default function CountriesTable({ countries }: Props) {
