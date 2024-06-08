@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export default styled.div`
-  background-color: #f3f3f3;
   border-radius: 0.5rem;
 
   .styled-table {
