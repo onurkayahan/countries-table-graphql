@@ -8,6 +8,8 @@ Tech stack: GraphQL, MobX, Typescript, React, @Mui/material, Vitest
 
 ### Query name: countries
 
+### Demo link: https://yolo-technical-task.vercel.app/
+
 ## Project setup
 
 ```
