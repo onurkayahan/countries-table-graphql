@@ -7,10 +7,7 @@ interface Props {
   handleSearch: (value: string) => void;
 }
 
-export default function CountriesTableSearch({
-  searchTerm,
-  handleSearch,
-}: Props) {
+export default function CountriesSearch({ searchTerm, handleSearch }: Props) {
   return (
     <Wrapper>
       <TextField
