@@ -5,7 +5,6 @@ export const GET_COUNTRIES = gql`
     countries {
       code
       name
-      emoji
     }
   }
 `;
@@ -19,6 +18,9 @@ export const GET_COUNTRY_BY_CODE = gql`
       native
       phone
       emoji
+      emojiU
+      awsRegion
+      currencies
       continent {
         name
       }

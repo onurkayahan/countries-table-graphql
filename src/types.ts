@@ -32,3 +32,8 @@ export interface State {
   country: Country;
   name: string;
 }
+
+export interface CountryTableRow {
+  code: string;
+  name: string;
+}

@@ -31,7 +31,7 @@ const CountryDetail: React.FC = () => {
   if (!country) return <Typography>No country found</Typography>;
 
   return (
-    <Card sx={{ minWidth: "75vw", borderRadius: "0.75rem", padding: "2rem" }}>
+    <Card sx={{ maxWidth: "75vw", borderRadius: "0.75rem", padding: "2rem" }}>
       <CardHeader
         title={country.name}
         avatar={<Avatar aria-label="recipe">{country.emoji}</Avatar>}

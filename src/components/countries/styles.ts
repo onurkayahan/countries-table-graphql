@@ -20,10 +20,6 @@ export default styled.div`
       border: 1px solid #ddd;
       text-align: left;
     }
-
-    tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
   }
 
   .table-container {

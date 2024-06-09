@@ -7,14 +7,14 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
-import { Country } from "../../../types";
+import { CountryTableRow } from "../../../types";
 import { Link } from "@mui/material";
 
 interface Column {
   id: "code" | "name";
   label: string;
   minWidth?: number;
-  align?: "right";
+  align?: "center";
   format?: (value: number) => string;
 }
 
@@ -24,7 +24,7 @@ const columns: readonly Column[] = [
 ];
 
 interface Props {
-  countries: Pick<Country, "name" | "code">[];
+  countries: CountryTableRow[];
 }
 
 export default function CountriesTable({ countries }: Props) {
