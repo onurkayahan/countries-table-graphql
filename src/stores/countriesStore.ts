@@ -1,10 +1,10 @@
 import { action, makeAutoObservable, toJS } from "mobx";
 import client from "../graphql/apolloClient";
 import { GET_COUNTRIES } from "../graphql/queries";
-import { Country } from "../types";
+import { CountryTableRow } from "../types";
 
 class CountriesStore {
-  countries: Country[] = [];
+  countries: CountryTableRow[] = [];
   loading: boolean = true;
   error: Error | null = null;
 
@@ -21,9 +21,9 @@ class CountriesStore {
       const response = await client.query({
         query: GET_COUNTRIES,
       });
-
       this.setCountries(toJS(response.data.countries));
     } catch (error: unknown) {
+      console.log(JSON.stringify(error));
       if (error instanceof Error) {
         this.error = error;
       } else {
@@ -33,7 +33,7 @@ class CountriesStore {
       this.loading = false;
     }
   }
-  setCountries(countries: Country[]) {
+  setCountries(countries: CountryTableRow[]) {
     this.countries = countries;
   }
 }

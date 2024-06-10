@@ -8,7 +8,6 @@ export const GET_COUNTRIES = gql`
     }
   }
 `;
-// queries.ts
 
 export const GET_COUNTRY_BY_CODE = gql`
   query GetCountryByCode($code: ID!) {

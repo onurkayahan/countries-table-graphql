@@ -11,7 +11,8 @@ export default function CountriesSearch({ searchTerm, handleSearch }: Props) {
   return (
     <Wrapper>
       <TextField
-        label="country code..."
+        label="Search"
+        placeholder="country code..."
         data-testid="search-countries"
         variant="outlined"
         fullWidth
