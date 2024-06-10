@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import { CountryTableRow } from "../../../types";
 import { Link } from "@mui/material";
 import { useState } from "react";
+import { isMobile } from "react-device-detect";
 
 interface Column {
   id: "code" | "name";
@@ -19,8 +20,8 @@ interface Column {
 }
 
 const columns: readonly Column[] = [
-  { id: "code", label: "Code", minWidth: 100 },
-  { id: "name", label: "Name", minWidth: 300 },
+  { id: "code", label: "Code", minWidth: 75 },
+  { id: "name", label: "Name" },
 ];
 
 interface Props {
@@ -44,8 +45,12 @@ export default function CountriesTable({ countries }: Props) {
 
   return (
     <Paper sx={{ width: "100%", overflow: "hidden" }}>
-      <TableContainer sx={{ maxHeight: 440 }}>
-        <Table stickyHeader aria-label="sticky table">
+      <TableContainer sx={{ maxHeight: 440, marginTop: "1rem" }}>
+        <Table
+          stickyHeader
+          aria-label="sticky table"
+          size={!isMobile ? "medium" : "small"}
+        >
           <TableHead>
             <TableRow>
               {columns.map((column) => (

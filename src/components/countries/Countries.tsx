@@ -41,7 +41,7 @@ const Countries = observer(() => {
 
   return (
     <Wrapper>
-      <Card sx={{ maxWidth: "75vw", borderRadius: "0.75rem", padding: "2rem" }}>
+      <Card className="card">
         <CardHeader
           title="Countries Table"
           titleTypographyProps={{ variant: "h5" }}
