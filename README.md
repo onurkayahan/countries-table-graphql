@@ -28,6 +28,7 @@ yarn dev
 ### Compiles and minifies for production
 
 ```
+
 yarn build
 ```
 
@@ -38,4 +39,4 @@ yarn lint
 ```
 
 <img width="378" alt="Screenshot 2024-06-10 at 17 06 23" src="https://github.com/onurkayahan/countries-table-graphql/assets/34922440/6a5aaaa2-36d7-4fab-bb9f-022e59c8022e">
-<img width="383" alt="Screenshot 2024-06-10 at 17 05 01" src="https://github.com/onurkayahan/countries-table-graphql/assets/34922440/19bfdd1d-6df9-4085-b245-cd8ee11ca6c7">
+<img width="377" alt="Screenshot 2024-06-10 at 17 07 12" src="https://github.com/onurkayahan/countries-table-graphql/assets/34922440/d998f5d6-e540-40cc-bc1f-001b96679a3b">
