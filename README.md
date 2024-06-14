@@ -1,8 +1,8 @@
 # countries-table-graphql
 
-Countries table with search with country code, countries consumed from open graphql data
+Countries table with consumed data from open GraphQL endpoint. Also, the table has a search mechanism with country code.
 
-Tech stack: GraphQL, MobX, Typescript, React, @Mui/material, Vitest
+Tech stack: React, Typescript, GraphQL, MobX, @mui/material, Vite, Vitest
 
 #### Demo Link: 
 https://countries-table-graphql.vercel.app/countries
@@ -23,6 +23,12 @@ yarn install
 
 ```
 yarn dev
+```
+
+### Run the tests
+
+```
+yarn test
 ```
 
 ### Compiles and minifies for production
